@@ -25,7 +25,7 @@ gunicorn \
     --error-logfile "${ERROR_LOG_FILE:-$HYPHEN_SYMBOL}" \
     --workers ${SERVER_WORKER_AMOUNT:-10} \
     --worker-class ${SERVER_WORKER_CLASS:-gthread} \
-    --threads ${SERVER_THREADS_AMOUNT:-30} \
+    --threads ${SERVER_THREADS_AMOUNT:-25} \
     --timeout ${GUNICORN_TIMEOUT:-48000} \
     --keep-alive ${GUNICORN_KEEPALIVE:-20} \
     --max-requests ${WORKER_MAX_REQUESTS:-0} \
